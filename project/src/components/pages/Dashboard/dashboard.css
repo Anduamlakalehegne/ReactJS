@@ -1,8 +1,9 @@
-* {
-   font-family: "Ubuntu", sans-serif;
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -39,7 +40,7 @@ body {
 
 .navigation ul li {
    text-decoration: none;
-   margin-top: 13px;
+   margin-top: 10px;
    transition: 0.5s;
    list-style: none;
    border-bottom: solid 2px rgb(109, 109, 109);
@@ -61,9 +62,9 @@ body {
    position: absolute;
    width: calc(100% - 100px);
    left: 100px;
-   min-height: 12vh;
-   box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
-   padding: 25px 0px 0 30px;
+   min-height: 1vh;
+   box-shadow: 0 5px 7px -4px rgba(0, 0, 0, 0.4);
+   padding: 20px 0px 0 30px;
    justify-content: space-between;
    z-index: 1;
    display: flex;
@@ -127,7 +128,7 @@ body {
    text-align: center;
    transition: 0.3s;
    padding: 10%;
-   ;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
 }
 
 .vehicle h4 {
@@ -148,6 +149,7 @@ body {
    text-align: center;
    transition: 0.3s;
    padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
 }
 
 .users h4 {
@@ -168,6 +170,7 @@ body {
    text-align: center;
    transition: 0.3s;
    padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
 }
 
 .monitor-vehicle h4 {
@@ -188,6 +191,7 @@ body {
    text-align: center;
    transition: 0.3s;
    padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
 }
 
 .alert h4 {
@@ -208,6 +212,7 @@ body {
    text-align: center;
    transition: 0.3s;
    padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
 }
 
 .registration h4 {
@@ -228,6 +233,7 @@ body {
    text-align: center;
    transition: 0.3s;
    padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
 }
 
 .communication h4 {
@@ -248,6 +254,7 @@ body {
    text-align: center;
    transition: 0.3s;
    padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
 }
 
 .report h4 {
@@ -268,6 +275,7 @@ body {
    text-align: center;
    transition: 0.3s;
    padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
 }
 
 .tracking h4 {
@@ -278,20 +286,63 @@ body {
 .tracking:hover {
    transform: scale(1.09);
 }
-
-@media screen and (max-width: 880px) {
-   .contents {
-      margin: 20px;
-      grid-template-columns: 100px;
-      justify-content: center;
-      width: 40%;
-   
-   }
+@media screen and (max-width: 1130px) {
+ 
    .header h3{
      display: none;
    }
-   
-   
-
-
+   .contents {
+      display: grid;
+      grid-template-columns: 100px 100px;
+      justify-content: space-around;
+      width: 70%;
+      margin-left: 30px;
+      column-gap: 180px;
+      padding-right: 50px;
+   }
 }
+
+@media screen and (max-width: 800px) {
+   .contents {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 100px;
+      justify-content: space-between;
+      width: 70%;
+      margin-left: 30px;
+      position: absolute;
+      padding-left: 150px;
+   }
+}
+@media screen and (max-width: 700px) {
+   .contents {
+      padding-left: 100px;
+   }
+}
+@media screen and (max-width: 600px) {
+   .contents {
+      padding-left: 60px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .contents {
+      padding-left: 20px;
+   }
+}
+@media screen and (max-width: 400px) {
+   .contents {
+      padding-left: 10px;
+   }
+}
+@media screen and (max-width: 360px) {
+   .contents {
+      padding-left: -100px;
+      margin-right: 200px;
+   }
+   
+}
+
+
+
+

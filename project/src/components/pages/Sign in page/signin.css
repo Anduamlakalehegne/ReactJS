@@ -17,6 +17,7 @@ body{
 	display: flex;
 	justify-content: center;
 	padding: 20px 100px;
+	box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
 }
 .contact-box{
 	max-width: 1000px;
@@ -26,6 +27,7 @@ body{
 	align-items: center;
 	background-color: #fff;
     height: 580px;
+
 }
 
 .left{
@@ -33,10 +35,11 @@ body{
 	height: 100%;
     border-radius: left 10px;
     border-radius: 15px 0 0 15px;
-    background: url("../img/loction.png") no-repeat center;
+    background: url("./img/loction.png") no-repeat center;
     background-size: 100%;
     width: 500px;
-    
+	border-radius: 20px 0px 0px 10px;
+	border-right: solid 1px rgb(0, 0, 0);
 }
 
 .right{

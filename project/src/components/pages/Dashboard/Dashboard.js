@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { FaHome } from 'react-icons/fa';
 import { AiFillCar } from "react-icons/ai";
 import { RiGpsFill } from "react-icons/ri";
@@ -12,10 +12,10 @@ import { FaUserAlt } from "react-icons/fa";
 import { AiFillSetting } from "react-icons/ai";
 import { FiLogOut } from "react-icons/fi";
 import { RiSearchLine } from "react-icons/ri";
-import './st.css';
-class Dashbord extends Component {
-    render() {
-        return (
+import './dashboard.css';
+
+export default function () {
+	return (
             <div className="containerr">
 
                 {/*---------------navigation---------------*/}
@@ -64,7 +64,7 @@ class Dashbord extends Component {
                 {/* ---------------header--------------- */}
 
                 <div className="header">
-                    <h2>Bazra Moters</h2>
+                    <h2>Bazra Motors</h2>
                     <p><FiLogOut size="2rem" color='black'></FiLogOut></p>
                 </div>
                 {/* ---------------end header--------------- */}
@@ -111,13 +111,9 @@ class Dashbord extends Component {
                 </div>
 
                 {/* ---------------end contents--------------- */}
-                
+
 
             </div>
 
         )
     }
-}
-
-
-export default Dashbord
